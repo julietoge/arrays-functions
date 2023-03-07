@@ -89,10 +89,12 @@ console.log("Maximum Value is " + maxValue);//Maximum Value is 10
 
 //Number Five
 //========================================================================>
-let arrayElement = [1, 2, 3, 6];
-let arrayIndex = [];
-for(let i = 0; i < array1.length; i++){
-    arrayIndex.push(arrayElement[i] * i);
+let newArray = [];
+function valTimesIndex(arrayOfNumber) {
+    for(let index = 0; index < arrayOfNumber.length; index++){
+        newArray.push(arrayOfNumber[index] * index);
+     }
+     console.log(newArray);
 }
-console.log(arrayIndex)//[ 0, 2, 6, 18 ]
+valTimesIndex([5, 10, 6, 9]);//[ 0, 10, 12, 27 ]
 //<========================================================================
